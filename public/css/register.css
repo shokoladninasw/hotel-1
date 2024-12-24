@@ -1,0 +1,126 @@
+.container-registration {
+    background-color: #fff;
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.registration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%; /* Занимает всю доступную ширину */
+    min-height: auto; /* Не задаем фиксированную высоту */
+}
+
+.registration-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.registration-img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.registration-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.registration-form h1 {
+    font-size: 24px;
+    font-family: 'Comfortaa', sans-serif;
+    margin-bottom: 20px;
+    color: #333;
+}
+.login-link {
+text-decoration: underline; 
+    color: #800020; 
+    font-style: italic;}
+
+
+
+.register-link {
+    text-decoration: underline;
+    text-decoration-color: #800020;
+}
+
+.login-link:hover, .register-link:hover {
+    color: #800020;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.registration-form input:focus {
+    border-color: #800020;
+    background-color: #fff;
+    outline: none;
+}
+
+.registration-form button {
+    width: 100%; /* Занимает всю доступную ширину контейнера */
+    padding: 12px; /* Внутренние отступы, такие же как у полей ввода */
+    margin: 5px 0; /* Равные отступы сверху и снизу, как у полей */
+    border: 1px solid #ddd; /* Такая же рамка, как у полей ввода */
+    border-radius: 25px; /* Сделать углы кнопки круглыми, как у полей */
+    font-size: 16px; /* Размер шрифта тот же, что и у полей */
+    background-color: #800020; /* Цвет фона кнопки */
+    color: white; /* Цвет текста на кнопке */
+    cursor: pointer; /* Курсор-указатель при наведении */
+    box-sizing: border-box; /* Включает padding и border в общую ширину */
+}
+
+
+
+
+@media (max-width:700px) {
+.registration-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registration-content img {
+    width: 70%;
+    height: 50vw;
+}
+
+.registration-form h1 {
+    font-size: 15px;
+}
+}

@@ -1,0 +1,130 @@
+.container-login {
+    background-color: #fff;
+    width: 80%;
+    max-width: 650px;
+    min-height: 400px; /* Ограничиваем минимальную высоту, если необходимо */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Основной контейнер */
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%; /* Занимает всю доступную ширину */
+    min-height: auto; /* Не задаем фиксированную высоту */
+}
+
+/* Контейнер для картинки и формы */
+.login-content {
+    display: flex; /* Размещение картинки и формы в строку */
+    justify-content: space-between; /* Расстояние между элементами */
+    width: 100%; /* Контейнер растягивается на всю ширину */
+    max-width: 1200px; /* Ограничиваем максимальную ширину */
+    gap: 20px; /* Расстояние между картинкой и формой */
+}
+
+/* Стили для картинки */
+.login-img {
+    width: 50%; /* Картинка занимает 50% ширины контейнера */
+    object-fit: cover; /* Изображение будет масштабироваться с сохранением пропорций */
+    border-radius: 10px;
+}
+
+/* Стили для формы */
+.login-form {
+    width: 50%; /* Форма занимает оставшуюся половину */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    gap: 15px; /* Расстояние между элементами формы */
+}
+
+/* Стили для заголовка с ссылками */
+.login-form h1 {
+    font-size: 24px;
+    font-family: 'Comfortaa', sans-serif;
+    margin-bottom: 20px;
+    color: #333; /* Цвет текста заголовка */
+}
+
+.register-link {
+    text-decoration: underline; 
+        color: #800020; 
+        font-style: italic;
+}
+
+/* Стили для полей ввода */
+.login-form input {
+    width: 100%; /* Занимает всю доступную ширину контейнера */
+    padding: 12px; /* Внутренние отступы, одинаковые с кнопкой */
+    margin: 5px 0; /* Равные отступы сверху и снизу */
+    border: 1px solid #ddd; /* Рамка такая же, как у кнопки */
+    border-radius: 25px; /* Сделать углы полей круглыми */
+    font-size: 16px; /* Размер шрифта такой же, как и у кнопки */
+    background-color: #f9f9f9; /* Цвет фона полей */
+    color: #333; /* Цвет текста в полях */
+    box-sizing: border-box; /* Включает padding и border в общую ширину */
+}
+
+.login-form input:focus {
+    border-color: #800020 !important; /* Красная рамка при фокусе */
+    background-color: #fff; /* Белый фон при фокусе */
+    outline: none;
+}
+
+/* Стили для кнопки */
+.login-form button {
+    width: 100%; /* Занимает всю доступную ширину контейнера */
+    padding: 12px; /* Внутренние отступы, такие же как у полей ввода */
+    margin: 5px 0; /* Равные отступы сверху и снизу, как у полей */
+    border: 1px solid #ddd; /* Такая же рамка, как у полей ввода */
+    border-radius: 25px; /* Сделать углы кнопки круглыми, как у полей */
+    font-size: 16px; /* Размер шрифта тот же, что и у полей */
+    background-color: #800020; /* Цвет фона кнопки */
+    color: white; /* Цвет текста на кнопке */
+    cursor: pointer; /* Курсор-указатель при наведении */
+    box-sizing: border-box; /* Включает padding и border в общую ширину */
+}
+
+.login-form button:hover {
+    background-color: #800020; /* Цвет кнопки при наведении */
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .login-content {
+        flex-direction: column; /* На мобильных устройствах элементы будут располагаться друг под другом */
+    }
+
+    .login-img {
+        width: 100%; /* Картинка будет занимать всю ширину на мобильных устройствах */
+        margin-bottom: 20px; /* Добавляем отступ снизу */
+    }
+
+    .login-form {
+        width: 100%; /* Форма займет всю ширину */
+    }
+
+
+    .login-form h1{
+        font-size: 15px;
+    }
+
+}
